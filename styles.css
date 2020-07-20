@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Rubik';
+    background-color: rgb(19, 19, 19);
+    user-select: none; /* supported by Chrome and Opera */
+    -webkit-user-select: none; /* Safari */
+    -khtml-user-select: none; /* Konqueror HTML */
+    -moz-user-select: none; /* Firefox */
+    -ms-user-select: none; /* Internet Explorer/Edge */
+}
+
+header {
+    font-size: 20px;
+    text-align: center;
+    background-color: rgb(0, 0, 0);
+    color: white;
+    padding: 10px 0px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    box-shadow: 0px 1px 20px #3c1164;
+}
+
+.centerme {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    width: 60vw;
+    font-family: 'Lato';
+    font-weight: 700;
+}
+
+footer {
+    font-size: 12px;
+    position: fixed;
+    bottom: 0px;
+    left: 0px;
+    width: 100%;
+    background-color: rgb(0, 0, 0);
+    color: rgb(148, 148, 148);
+    padding: 10px 0px 20px 0px;
+    text-align: center;
+}
+
+img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    box-shadow: 0px 0px 10px blueviolet;
+}
+
+a{
+    text-decoration: none;
+    font-family: 'Lato';
+    font-weight: 550px;
+    color: #a7a7a7;
+}
+
+main > div{
+    margin : 20px;
+    padding: 10px;
+    background-color: rgba(26, 26, 26);
+    border-radius: 6px;
+    color: white;
+    font-size: 15px
+}
+
+.logo {
+    font-size: 18px;
+    font-weight: 600;
+    color: blueviolet;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding-bottom: 10px;
+}
+
+main > div:hover {
+    transform: translate(5px,-5px);
+    border-left: 3px solid blueviolet;
+    border-bottom: 3px solid blueviolet;
+}
+
+#all {
+    color: blueviolet
+}
+
+span {
+    cursor: pointer
+}
+
+.none {
+    display: none;
+}
+
+@media (max-width: 600px) {
+    .centerme {
+        width: 45vw
+    }
+    header {
+        font-size: 16px
+    }
+    main > div{
+        font-size: 12px !important
+    }
+    .logo {
+        font-size: 15px
+    }
+}
